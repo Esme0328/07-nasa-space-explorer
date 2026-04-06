@@ -60,6 +60,24 @@ h1 {
   margin-bottom: 20px;
 }
 
+.fact-card {
+  margin-bottom: 20px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: linear-gradient(180deg, rgba(11, 61, 145, 0.22), rgba(15, 28, 53, 0.95));
+}
+
+.fact-card h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
+}
+
+.fact-card p {
+  color: var(--muted);
+}
+
 input[type="date"],
 button {
   font-family: "Source Sans 3", sans-serif;
@@ -116,6 +134,11 @@ button:hover {
   height: 210px;
   object-fit: cover;
   display: block;
+  transition: transform 0.35s ease;
+}
+
+.gallery-card:hover .gallery-image {
+  transform: scale(1.08);
 }
 
 .gallery-info {
@@ -131,6 +154,26 @@ button:hover {
 
 .gallery-info p {
   color: var(--muted);
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 210px;
+  background: linear-gradient(140deg, rgba(252, 61, 33, 0.35), rgba(11, 61, 145, 0.35));
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.video-link {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .placeholder,
